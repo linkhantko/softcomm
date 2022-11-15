@@ -2,33 +2,38 @@
 module.exports = {
     content: ['./*.html'],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                body: ['Sono']
+            }
+        },
     },
     daisyui: {
         themes: [{
             mytheme: {
 
-                "primary": "#2f3e46",
+                "primary": "#f4aa5a",
 
-                "secondary": "#84a98c",
+                "secondary": "#9fa1e0",
 
-                "accent": "#52796f",
+                "accent": "#61e8c6",
 
-                "neutral": "#354f52",
+                "neutral": "#1D1623",
 
-                "base-100": "#cad2c5",
+                "base-100": "#F3F5F7",
 
-                "info": "#06b6d4",
+                "info": "#49A8C5",
 
-                "success": "#10b981",
+                "success": "#11833D",
 
-                "warning": "#F4C152",
+                "warning": "#DEB40D",
 
-                "error": "#7f1d1d",
+                "error": "#E56180",
             },
         }, ],
     },
     plugins: [
         require("daisyui"),
+        require('@tailwindcss/forms'),
     ],
 }
